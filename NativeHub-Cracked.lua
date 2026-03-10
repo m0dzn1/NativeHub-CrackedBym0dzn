@@ -66,19 +66,6 @@ local function PlayIntroThenLoad(scriptId)
     BlurEffect.Size = 0
     BlurEffect.Parent = game:GetService("Lighting")
 
-    -- "key: " label (white)
-    local KeyLabel = Instance.new("TextLabel")
-    KeyLabel.Size = UDim2.new(1, 0, 0, 60)
-    KeyLabel.Position = UDim2.new(0, 0, 0.38, 0)
-    KeyLabel.BackgroundTransparency = 1
-    KeyLabel.Text = "key: m0dzn"
-    KeyLabel.Font = Enum.Font.GothamBold
-    KeyLabel.TextSize = 38
-    KeyLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-    KeyLabel.TextTransparency = 1
-    KeyLabel.ZIndex = 11
-    KeyLabel.Parent = ScreenGui
-
     -- Colored "m0dzn" overlay just for the red part on KeyLabel
     -- We'll use RichText instead
     KeyLabel.RichText = true
